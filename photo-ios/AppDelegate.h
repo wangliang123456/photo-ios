@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GDTSplashAd.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong, nonatomic) GDTSplashAd *splash;
 
 @end
 

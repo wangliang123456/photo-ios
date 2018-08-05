@@ -20,6 +20,7 @@
 		EF91DAF421169DEF006DF235 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91DAF321169DEF006DF235 /* LeftSlideViewController.m */; };
 		EF91DAF721169EC2006DF235 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91DAF621169EC2006DF235 /* OrderViewController.m */; };
 		EF91DAFA21169EF5006DF235 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91DAF921169EF5006DF235 /* AboutUsViewController.m */; };
+		EF91DB062116B5E7006DF235 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91DB052116B5E7006DF235 /* libGDTMobSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,15 @@
 		EF91DAF621169EC2006DF235 /* OrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
 		EF91DAF821169EF5006DF235 /* AboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
 		EF91DAF921169EF5006DF235 /* AboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		EF91DAFD2116B5E3006DF235 /* GDTNativeExpressAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeExpressAd.h; sourceTree = "<group>"; };
+		EF91DAFE2116B5E3006DF235 /* GDTSplashAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSplashAd.h; sourceTree = "<group>"; };
+		EF91DAFF2116B5E4006DF235 /* GDTSDKConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSDKConfig.h; sourceTree = "<group>"; };
+		EF91DB002116B5E4006DF235 /* GDTNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeAd.h; sourceTree = "<group>"; };
+		EF91DB012116B5E5006DF235 /* GDTMobInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
+		EF91DB022116B5E5006DF235 /* GDTMobBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
+		EF91DB032116B5E5006DF235 /* GDTSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSDKDefines.h; sourceTree = "<group>"; };
+		EF91DB042116B5E6006DF235 /* GDTNativeExpressAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeExpressAdView.h; sourceTree = "<group>"; };
+		EF91DB052116B5E7006DF235 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDTMobSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EB44B3963EAFFBD18E88D0C /* libPods-photo-ios.a in Frameworks */,
+				EF91DB062116B5E7006DF235 /* libGDTMobSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +184,7 @@
 		EF40FB1620F23CD100983C77 /* photo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				EF91DAFB2116B5AC006DF235 /* lib */,
 				EF137F8121169689002751CC /* model */,
 				EF137F8021169682002751CC /* controllers */,
 				EF137F7F2116967C002751CC /* views */,
@@ -206,6 +218,30 @@
 				EF40FB3D20F23CD300983C77 /* Info.plist */,
 			);
 			path = "photo-iosUITests";
+			sourceTree = "<group>";
+		};
+		EF91DAFB2116B5AC006DF235 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EF91DAFC2116B5D9006DF235 /* GDT */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		EF91DAFC2116B5D9006DF235 /* GDT */ = {
+			isa = PBXGroup;
+			children = (
+				EF91DB022116B5E5006DF235 /* GDTMobBannerView.h */,
+				EF91DB012116B5E5006DF235 /* GDTMobInterstitial.h */,
+				EF91DB002116B5E4006DF235 /* GDTNativeAd.h */,
+				EF91DAFD2116B5E3006DF235 /* GDTNativeExpressAd.h */,
+				EF91DB042116B5E6006DF235 /* GDTNativeExpressAdView.h */,
+				EF91DAFF2116B5E4006DF235 /* GDTSDKConfig.h */,
+				EF91DB032116B5E5006DF235 /* GDTSDKDefines.h */,
+				EF91DAFE2116B5E3006DF235 /* GDTSplashAd.h */,
+				EF91DB052116B5E7006DF235 /* libGDTMobSDK.a */,
+			);
+			path = GDT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,6 +599,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/photo-ios/lib/GDT",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "photo.photo-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -581,6 +621,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/photo-ios/lib/GDT",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "photo.photo-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
