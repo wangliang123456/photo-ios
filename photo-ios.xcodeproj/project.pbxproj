@@ -16,6 +16,10 @@
 		EF40FB2720F23CD300983C77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF40FB2620F23CD300983C77 /* main.m */; };
 		EF40FB3120F23CD300983C77 /* photo_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF40FB3020F23CD300983C77 /* photo_iosTests.m */; };
 		EF40FB3C20F23CD300983C77 /* photo_iosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF40FB3B20F23CD300983C77 /* photo_iosUITests.m */; };
+		EF91DAF121169DB2006DF235 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91DAF021169DB2006DF235 /* HomeViewController.m */; };
+		EF91DAF421169DEF006DF235 /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91DAF321169DEF006DF235 /* LeftSlideViewController.m */; };
+		EF91DAF721169EC2006DF235 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91DAF621169EC2006DF235 /* OrderViewController.m */; };
+		EF91DAFA21169EF5006DF235 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91DAF921169EF5006DF235 /* AboutUsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,14 @@
 		EF40FB3720F23CD300983C77 /* photo-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "photo-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF40FB3B20F23CD300983C77 /* photo_iosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = photo_iosUITests.m; sourceTree = "<group>"; };
 		EF40FB3D20F23CD300983C77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF91DAEF21169DB2006DF235 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EF91DAF021169DB2006DF235 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		EF91DAF221169DEF006DF235 /* LeftSlideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		EF91DAF321169DEF006DF235 /* LeftSlideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
+		EF91DAF521169EC2006DF235 /* OrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		EF91DAF621169EC2006DF235 /* OrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		EF91DAF821169EF5006DF235 /* AboutUsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		EF91DAF921169EF5006DF235 /* AboutUsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +112,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EF137F7E21169675002751CC /* utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		EF137F7F2116967C002751CC /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		EF137F8021169682002751CC /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF91DAEF21169DB2006DF235 /* HomeViewController.h */,
+				EF91DAF021169DB2006DF235 /* HomeViewController.m */,
+				EF91DAF221169DEF006DF235 /* LeftSlideViewController.h */,
+				EF91DAF321169DEF006DF235 /* LeftSlideViewController.m */,
+				EF91DAF521169EC2006DF235 /* OrderViewController.h */,
+				EF91DAF621169EC2006DF235 /* OrderViewController.m */,
+				EF91DAF821169EF5006DF235 /* AboutUsViewController.h */,
+				EF91DAF921169EF5006DF235 /* AboutUsViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		EF137F8121169689002751CC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		EF40FB0B20F23CD100983C77 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +173,10 @@
 		EF40FB1620F23CD100983C77 /* photo-ios */ = {
 			isa = PBXGroup;
 			children = (
+				EF137F8121169689002751CC /* model */,
+				EF137F8021169682002751CC /* controllers */,
+				EF137F7F2116967C002751CC /* views */,
+				EF137F7E21169675002751CC /* utils */,
 				EF40FB1720F23CD100983C77 /* AppDelegate.h */,
 				EF40FB1820F23CD100983C77 /* AppDelegate.m */,
 				EF40FB1A20F23CD100983C77 /* ViewController.h */,
@@ -328,8 +380,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF40FB1C20F23CD100983C77 /* ViewController.m in Sources */,
+				EF91DAF721169EC2006DF235 /* OrderViewController.m in Sources */,
+				EF91DAFA21169EF5006DF235 /* AboutUsViewController.m in Sources */,
+				EF91DAF421169DEF006DF235 /* LeftSlideViewController.m in Sources */,
 				EF40FB2720F23CD300983C77 /* main.m in Sources */,
 				EF40FB1920F23CD100983C77 /* AppDelegate.m in Sources */,
+				EF91DAF121169DB2006DF235 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +554,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B1DE23A19F82F38C7E1D36C5 /* Pods-photo-ios.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6FQCK6BVF7;
@@ -516,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A863F1E0D6FB15E1B728EAF /* Pods-photo-ios.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6FQCK6BVF7;
