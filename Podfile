@@ -1,7 +1,6 @@
 target 'photo-ios' do
   platform :ios, '9.3'
   pod 'OpenCV'
-  pod 'AFNetworking', '~> 3.0'
   pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
   pod 'SDWebImage'
   pod 'Mantle'

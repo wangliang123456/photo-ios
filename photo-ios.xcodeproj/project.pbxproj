@@ -21,6 +21,8 @@
 		EF91DAF721169EC2006DF235 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91DAF621169EC2006DF235 /* OrderViewController.m */; };
 		EF91DAFA21169EF5006DF235 /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF91DAF921169EF5006DF235 /* AboutUsViewController.m */; };
 		EF91DB062116B5E7006DF235 /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91DB052116B5E7006DF235 /* libGDTMobSDK.a */; };
+		EF91DB082116BA97006DF235 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91DB072116BA97006DF235 /* StoreKit.framework */; };
+		EF91DB0A2116BBF6006DF235 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EF91DB092116BBF6006DF235 /* libxml2.2.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		EF91DB032116B5E5006DF235 /* GDTSDKDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTSDKDefines.h; sourceTree = "<group>"; };
 		EF91DB042116B5E6006DF235 /* GDTNativeExpressAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDTNativeExpressAdView.h; sourceTree = "<group>"; };
 		EF91DB052116B5E7006DF235 /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDTMobSDK.a; sourceTree = "<group>"; };
+		EF91DB072116BA97006DF235 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		EF91DB092116BBF6006DF235 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF91DB0A2116BBF6006DF235 /* libxml2.2.tbd in Frameworks */,
+				EF91DB082116BA97006DF235 /* StoreKit.framework in Frameworks */,
 				6EB44B3963EAFFBD18E88D0C /* libPods-photo-ios.a in Frameworks */,
 				EF91DB062116B5E7006DF235 /* libGDTMobSDK.a in Frameworks */,
 			);
@@ -109,6 +115,8 @@
 		2A05E37B041FEAC8FBB3D5A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF91DB092116BBF6006DF235 /* libxml2.2.tbd */,
+				EF91DB072116BA97006DF235 /* StoreKit.framework */,
 				304620F7B2260B84D63EA811 /* libPods-photo-ios.a */,
 			);
 			name = Frameworks;
@@ -255,7 +263,7 @@
 				EF40FB1020F23CD100983C77 /* Sources */,
 				EF40FB1120F23CD100983C77 /* Frameworks */,
 				EF40FB1220F23CD100983C77 /* Resources */,
-				D6EE831E46C4A6F7BFCB9E75 /* [CP] Copy Pods Resources */,
+				7EBF5FA93C6332B75C11FE02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,6 +380,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7EBF5FA93C6332B75C11FE02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-photo-ios/Pods-photo-ios-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-photo-ios/Pods-photo-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A2F10BC85EE021DA889A050E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,24 +414,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D6EE831E46C4A6F7BFCB9E75 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-photo-ios/Pods-photo-ios-resources.sh",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-photo-ios/Pods-photo-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

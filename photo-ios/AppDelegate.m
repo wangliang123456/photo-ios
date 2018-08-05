@@ -13,16 +13,16 @@
 
 @end
 
-static NSString *kGDTMobSDKAppId = @"1107492176";
+static NSString *kGDTMobSDKAppId = @"1105344611";
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        GDTSplashAd *splash = [[GDTSplashAd alloc] initWithAppId:kGDTMobSDKAppId placementId:@"3020637736836142"];
+        GDTSplashAd *splash = [[GDTSplashAd alloc] initWithAppId:kGDTMobSDKAppId placementId:@"9040714184494018"];
         splash.delegate = self;
-        splash.fetchDelay = 3;
+        splash.fetchDelay = 10;
         [splash loadAdAndShowInWindow:self.window];
         self.splash = splash;
     }
